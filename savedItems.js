@@ -1,6 +1,5 @@
 import { formatResponse } from "./sidepanel.js";
 
-
 export function saveSummary(content) {
     chrome.storage.local.get({ savedSummaries: [] }, (result) => {
         const updatedSummaries = [...result.savedSummaries, content];

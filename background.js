@@ -5,3 +5,4 @@ chrome.action.onClicked.addListener(async (tab) => {
         console.error("Side Panel API is not available.");
     }
 });
+

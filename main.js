@@ -9,5 +9,4 @@ document.getElementById("savedNotes").addEventListener("click", () => {
     savedItem();
 })
 
-
 homeRender();

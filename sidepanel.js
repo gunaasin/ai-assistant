@@ -1,5 +1,4 @@
 import {saveSummary} from "./savedItems.js";
-;
 
 function homeHtmlRender(){
     document.querySelector(".content").innerHTML =  `
