@@ -146,7 +146,6 @@ body {
     border: 1px solid rgba(142, 45, 226, 0.3);
     overflow: hidden;
     transition: all 0.3s ease;
-
 }
 
 .result-list {
@@ -293,7 +292,10 @@ ul li::before {
 }
 
 .logo-img {
-    width: 35px;
+    position: relative;
+    top: -4px;
+    right: -3px;
+    width: 37px;
 }
 
 .loader .box {
@@ -391,7 +393,6 @@ ul li::before {
 .flex {
     position: absolute;
     right: 0;
-
 }
 
 .outer-cont {
@@ -464,5 +465,4 @@ ul li::before {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
-
 }

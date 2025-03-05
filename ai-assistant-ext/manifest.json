@@ -15,9 +15,10 @@
     "action": {
         "default_title": "Research Assistant",
         "default_icon": {
-            "16": "g-logo.png",
-            "48": "g-logo.png",
-            "128": "g-logo.png"
+            "16": "ai + gemini fin.png",
+            "32": "ai + gemini fin.png",
+            "48": "ai + gemini fin.png",
+            "128": "ai + gemini fin.png"
         },
         "open_side_panel": true
     },
@@ -25,7 +26,7 @@
         "default_path": "sidepanel.html"
     },
     "host_permissions": [
-        "http://localhost:8080/*",
+        "https://ai-production-1.onrender.com/*",
         "<all_urls>"
     ],
     "content_security_policy": {

@@ -43,7 +43,7 @@ function loderRender(){
     <div class="loader">
         <div class="box">
           <div class="logo">
-            <img src="./g-logo.png" alt="logo" class="logo-img" />
+            <img src="./ai + gemini fin.png" alt="logo" class="logo-img" />
           </div>
         </div>
         <div class="box"></div>
@@ -70,7 +70,7 @@ function loderRender(){
             return;
         }
         loderRender();
-        const response = await fetch("http://localhost:8080/api/v1/getContent", {
+        const response = await fetch("https://ai-production-1.onrender.com/api/v1/getContent", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ content: result, operation: "summarize" }),
@@ -87,42 +87,6 @@ function loderRender(){
     }
 }
 
-
-// function showResult(content) {
-//     const resultContainer = document.getElementById("results");
-
-//     // Format content into a bullet list
-//     const formattedContent = formatResponse(content);
-
-//     // Create the result item container
-//     resultContainer.innerHTML = `
-//         <div class="result-item">
-//             <ul class="result-list">${formattedContent}</ul>
-//             <button id="saveBtn" class="save-btn">Save</button>
-//         </div>
-//     `;
-
-//     // Attach event listener to the save button
-//     document.getElementById("saveBtn").addEventListener("click", () => {
-//         saveSummary(content);
-//     });
-// }
-
-// // Function to format response into a structured bullet list
-// function formatResponse(responseText) {
-//     return responseText
-//         .split('*')  // Split at '*'
-//         .filter(point => point.trim() !== "") // Remove empty entries
-//         .map(point => {
-//             // Check if the point contains **bold text** and a colon
-//             const match = point.match(/\*\*(.*?)\*\*: (.+)/);
-//             if (match) {
-//                 return `<li><strong>${match[1]}</strong>: ${match[2]}</li>`; // Format bold text properly
-//             }
-//             return `<li>${point.trim()}</li>`; // Otherwise, return normal point
-//         })
-//         .join('');
-// }
 
 function showResult(content) {
     const resultContainer = document.getElementById("results");
